@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TableLayout android:layout_width="match_parent" android:layout_height="20px" android:id="@+id/tableLayout1"> </TableLayout>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableRow1">
+        <TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Dest. IP :" android:layout_height="wrap_content" android:layout_margin="30px" android:layout_marginTop="10px"></TextView>
+        <EditText android:id="@+id/editTextIP" android:text="192.168.1.253" android:layout_height="wrap_content" android:layout_width="230px" android:layout_marginTop="30px"></EditText>
+    </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableRow1">
+        <TextView android:layout_width="wrap_content" android:id="@+id/textView2" android:text="Dest. port:" android:layout_height="wrap_content" android:layout_margin="30px" android:layout_marginTop="10px"></TextView>
+        <EditText android:id="@+id/editTextPort" android:text="12345" android:layout_height="wrap_content" android:layout_marginTop="30px" android:layout_width="150px"></EditText>
+    </TableRow>
+    <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableRow2">
+        <TextView android:layout_width="wrap_content" android:id="@+id/textView3" android:text="NMEA data:" android:layout_height="wrap_content" android:layout_marginLeft="30px"></TextView>
+    </TableRow>
+    
+        
+     	<TableRow android:layout_width="match_parent" android:layout_height="10px" android:id="@+id/tableRow2"></TableRow>
+     	<TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableRow2">
+        <TextView android:text="$RMC string:" android:id="@+id/textRMC" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30px"></TextView>
+   		 </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableRow2">
+        <TextView android:text="$VTG string:" android:id="@+id/textVTG" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30px"></TextView>
+   		 </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableRow2">
+        <TextView android:text="$GGA string:" android:id="@+id/textGGA" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30px"></TextView>
+   		 </TableRow>
+        <TableRow android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/tableRow3">
+            <Button android:text="nmea2udp" android:id="@+id/button1" android:layout_height="wrap_content" android:layout_width="200px" android:layout_marginLeft="35px" android:layout_marginTop="40px"></Button>
+            <Button android:layout_width="200px" android:id="@+id/button2" android:layout_height="wrap_content" android:text="Exit" android:layout_marginTop="40px"></Button>
+        </TableRow>
+
+
+</LinearLayout>
